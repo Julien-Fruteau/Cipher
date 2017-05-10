@@ -1,6 +1,6 @@
 # ***************           PYTHON FOR DATA SCIENCE          *************** #
 
-# ***************            CASE STUDY - CYPHER             *************** #
+# ***************             CASE STUDY - CYPHER            *************** #
 
 # Exercise 1
 #  Create a dictionary letters with keys consisting of the numbers
