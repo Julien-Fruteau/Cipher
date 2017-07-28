@@ -27,6 +27,7 @@ import string
 #  0-26 using result % 27.
 
 alphabet = string.ascii_lowercase + " "
+# code_tip_py3_dict_creation_with_enumerate
 letters = dict(enumerate(alphabet))
 
 # encryption_key = 3
@@ -48,10 +49,12 @@ letters = dict(enumerate(alphabet))
 
 message = "hi my name is caesar"
 
+
 def caesar(message, encryption_key):
-    encoding = {letters[i]:(encryption_key + i) % 27 for i in letters.keys()}
+    encoding = {letters[i]: (encryption_key + i) % 27 for i in letters.keys()}
     encoded_message = ''.join(letters[encoding[letter]] for letter in message)
     return encoded_message
+
 
 encoded_message = caesar(message, encryption_key=3)
 print(encoded_message)
@@ -63,6 +66,6 @@ print(encoded_message)
 # * Store your decoded message as decoded_message.
 # * Print decoded_message. Does this recover your original message?
 
-decoded_message = caesar(encoded_message,encryption_key=-3)
+decoded_message = caesar(encoded_message, encryption_key=-3)
 print(decoded_message)
 decoded_message == message
